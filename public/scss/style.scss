@@ -782,6 +782,34 @@ input[type="range"] {
 //     }
 //   }
 // }
+.goods {
+  padding-top: calc(var(--pitch) * 4);
+
+  &__title {
+    font-size: 0.75rem;
+    line-height: 1.5em;
+  }
+
+  &__photo {
+    transition: all ease 0.2s;
+  }
+
+  a {
+    color: var(--textColor);
+
+    &:hover {
+      text-decoration: underline;
+
+      .goods__photo {
+        opacity: 0.5;
+      }
+    }
+
+    @include touch {
+      text-decoration: underline;
+    }
+  }
+}
 
 .blog {
   padding-top: calc(var(--pitch) * 7);
@@ -1202,6 +1230,12 @@ input[type="range"] {
 
       }
 
+    }
+  }
+
+  .goods {
+    a {
+      color: var(--textColorLight);
     }
   }
 
