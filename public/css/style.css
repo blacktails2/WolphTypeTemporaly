@@ -2920,6 +2920,14 @@ input[type="range"] {
       border-radius: 5px;
       margin: 0 0.2em;
       font-family: "Arnord Italic"; }
+  .article__numberlist {
+    font-family: "Koga Sans Modern", "TazuganeGothicStdN-Book", sans-serif;
+    font-variation-settings: "wght" 400;
+    font-feature-settings: "palt", "ss01", "ss08";
+    letter-spacing: 0;
+    margin-top: calc(var(--pitch) * 1);
+    font-feature-settings: "chws" 1, "ss01", "ss08";
+    margin-left: 2em; }
   .article__subhead {
     font-family: "Koga Sans Modern", "TazuganeGothicStdN-Bold", sans-serif;
     font-variation-settings: "wght" 600;

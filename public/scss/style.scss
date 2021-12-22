@@ -961,6 +961,13 @@ input[type="range"] {
     }
   }
 
+  &__numberlist {
+    @include kogabook($spacing: 0);
+    margin-top: calc(var(--pitch) * 1);
+    font-feature-settings: "chws"1, "ss01", "ss08";
+    margin-left: 2em;
+  }
+
   &__subhead {
     @include kogabold($spacing: 0.1rem);
     color: var(--accentColor);
