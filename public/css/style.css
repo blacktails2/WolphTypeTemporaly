@@ -2946,7 +2946,7 @@ a.has-text-danger:hover, a.has-text-danger:focus {
 }
 @font-face {
   font-family: "Narukami";
-  src: url("/font/Narukami-Regular.woff2") format("woff2");
+  src: url("/font/NarukamiVF.woff2") format("woff2");
 }
 @font-face {
   font-family: "roume-text-book";
@@ -3577,7 +3577,7 @@ input[type=range]::-moz-focus-outer {
 .typeface__features input.ss11::before {
   content: "ss11";
 }
-.typeface__check, .typeface__check--kogasansmodern, .typeface__check--biela, .typeface__check--roume, .typeface__check--koga {
+.typeface__check, .typeface__check--narukami, .typeface__check--kogasansmodern, .typeface__check--biela, .typeface__check--roume, .typeface__check--koga {
   appearance: none;
   position: relative;
   cursor: pointer;
@@ -3585,7 +3585,7 @@ input[type=range]::-moz-focus-outer {
   border: none;
   width: 50px;
 }
-.typeface__check::before, .typeface__check--kogasansmodern::before, .typeface__check--biela::before, .typeface__check--roume::before, .typeface__check--koga::before {
+.typeface__check::before, .typeface__check--narukami::before, .typeface__check--kogasansmodern::before, .typeface__check--biela::before, .typeface__check--roume::before, .typeface__check--koga::before {
   font-family: "Koga Sans Modern", sans-serif;
   font-variation-settings: "wght" 500;
   font-feature-settings: "palt", "ss01", "ss08";
@@ -3600,11 +3600,11 @@ input[type=range]::-moz-focus-outer {
   transition: ease all 0.2s;
   text-align: center;
 }
-.typeface__check:hover::before, .typeface__check--kogasansmodern:hover::before, .typeface__check--biela:hover::before, .typeface__check--roume:hover::before, .typeface__check--koga:hover::before {
+.typeface__check:hover::before, .typeface__check--narukami:hover::before, .typeface__check--kogasansmodern:hover::before, .typeface__check--biela:hover::before, .typeface__check--roume:hover::before, .typeface__check--koga:hover::before {
   color: var(--accentColor);
   background-color: rgba(204, 178, 128, 0.3);
 }
-.typeface__check:checked::before, .typeface__check--kogasansmodern:checked::before, .typeface__check--biela:checked::before, .typeface__check--roume:checked::before, .typeface__check--koga:checked::before {
+.typeface__check:checked::before, .typeface__check--narukami:checked::before, .typeface__check--kogasansmodern:checked::before, .typeface__check--biela:checked::before, .typeface__check--roume:checked::before, .typeface__check--koga:checked::before {
   color: var(--backgroundColor);
   background-color: var(--accentColor);
 }
@@ -3649,6 +3649,7 @@ input[type=range]::-moz-focus-outer {
 .typeface__big--narukami {
   margin-top: -15px;
   font-family: "Narukami", serif;
+  font-variation-settings: "wght" 1000;
 }
 .typeface__medium, .typeface__medium--narukami, .typeface__medium--biela, .typeface__medium--roume, .typeface__medium--kogasansmodern, .typeface__medium--swow, .typeface__medium--kogasans {
   font-size: 2.25rem;
@@ -3682,6 +3683,7 @@ input[type=range]::-moz-focus-outer {
 }
 .typeface__medium--narukami {
   font-family: "Narukami", serif;
+  font-variation-settings: "wght" 1000;
 }
 .typeface__small, .typeface__small--narukami, .typeface__small--biela, .typeface__small--roume, .typeface__small--kogasansmodern, .typeface__small--swow, .typeface__small--kogasans {
   margin-top: 15px;
@@ -3714,6 +3716,7 @@ input[type=range]::-moz-focus-outer {
 }
 .typeface__small--narukami {
   font-family: "Narukami", serif;
+  font-variation-settings: "wght" 1000;
 }
 .typeface__other {
   margin-top: calc(var(--pitch) * 3);
@@ -4099,15 +4102,15 @@ input[type=range]::-moz-focus-outer {
   color: var(--accentColorLight);
   background-image: linear-gradient(45deg, transparent 50%, var(--accentColorLight) 50%), linear-gradient(135deg, var(--accentColorLight) 50%, transparent 50%);
 }
-.js-lighttheme .typeface__check::before, .js-lighttheme .typeface__check--koga::before, .js-lighttheme .typeface__check--roume::before, .js-lighttheme .typeface__check--biela::before, .js-lighttheme .typeface__check--kogasansmodern::before {
+.js-lighttheme .typeface__check::before, .js-lighttheme .typeface__check--koga::before, .js-lighttheme .typeface__check--roume::before, .js-lighttheme .typeface__check--biela::before, .js-lighttheme .typeface__check--kogasansmodern::before, .js-lighttheme .typeface__check--narukami::before {
   color: var(--accentColorLight);
   border-bottom: 1px solid var(--accentColorLight);
 }
-.js-lighttheme .typeface__check:hover::before, .js-lighttheme .typeface__check--koga:hover::before, .js-lighttheme .typeface__check--roume:hover::before, .js-lighttheme .typeface__check--biela:hover::before, .js-lighttheme .typeface__check--kogasansmodern:hover::before {
+.js-lighttheme .typeface__check:hover::before, .js-lighttheme .typeface__check--koga:hover::before, .js-lighttheme .typeface__check--roume:hover::before, .js-lighttheme .typeface__check--biela:hover::before, .js-lighttheme .typeface__check--kogasansmodern:hover::before, .js-lighttheme .typeface__check--narukami:hover::before {
   color: var(--accentColorLight);
   background-color: rgba(188, 158, 101, 0.3);
 }
-.js-lighttheme .typeface__check:checked::before, .js-lighttheme .typeface__check--koga:checked::before, .js-lighttheme .typeface__check--roume:checked::before, .js-lighttheme .typeface__check--biela:checked::before, .js-lighttheme .typeface__check--kogasansmodern:checked::before {
+.js-lighttheme .typeface__check:checked::before, .js-lighttheme .typeface__check--koga:checked::before, .js-lighttheme .typeface__check--roume:checked::before, .js-lighttheme .typeface__check--biela:checked::before, .js-lighttheme .typeface__check--kogasansmodern:checked::before, .js-lighttheme .typeface__check--narukami:checked::before {
   color: var(--backgroundColorLight);
   background-color: var(--accentColorLight);
 }

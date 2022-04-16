@@ -560,6 +560,10 @@ input[type="range"] {
     &--kogasansmodern {
       @extend .typeface__check
     }
+
+    &--narukami {
+      @extend .typeface__check
+    }
   }
 
   &__big {
@@ -617,6 +621,7 @@ input[type="range"] {
       @extend .typeface__big;
       margin-top: -15px;
       font-family: 'Narukami', serif;
+      font-variation-settings: 'wght'1000;
     }
   }
 
@@ -667,6 +672,7 @@ input[type="range"] {
     &--narukami {
       @extend .typeface__medium;
       font-family: 'Narukami', serif;
+      font-variation-settings: 'wght'1000;
     }
   }
 
@@ -716,6 +722,7 @@ input[type="range"] {
     &--narukami {
       @extend .typeface__small;
       font-family: 'Narukami', serif;
+      font-variation-settings: 'wght'1000;
     }
   }
 
