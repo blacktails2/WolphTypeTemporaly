@@ -2926,7 +2926,7 @@ a.has-text-danger:hover, a.has-text-danger:focus {
 }
 @font-face {
   font-family: "Biela";
-  src: url("/font/Biela-Regular.woff2") format("woff2");
+  src: url("/font/BielaVF.woff2") format("woff2");
 }
 @font-face {
   font-family: "koga-sans-book";
